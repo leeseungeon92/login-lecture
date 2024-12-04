@@ -60,7 +60,9 @@ html {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #03e9f4;
+    font-weight: bold;
+    background-color: blue;
+    color:deepskyblue;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -68,6 +70,15 @@ html {
     transition: .5s;
     margin-top: 40px;
     letter-spacing: 4px
+  }
+  
+  .login-box form #button {
+    width: 200px;
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
   }
   
   /* Copyright (c) 2024 by Soufiane Khalfaoui HaSsani (https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda) */
