@@ -6,10 +6,10 @@ class UserStorage {
 
   static getUserInfo(id) {
     return new Promise((resolve, reject)=>{
-      const query = "SELECT * FROM users where id = ?;";
+      const query = "SELECT * FROM asdadss where id = ?;";
       db.query(query, [id], (err, data)=>{
         if(err) reject(`${err}`);
-        resolve(data[0]);
+        else resolve(data[0]);
       });
     });
   }
@@ -19,7 +19,7 @@ class UserStorage {
         const query = "INSERT INTO users(id,password,name) VALUES(?,?,?);";
         db.query(query, [userInfo.id, userInfo.password, userInfo.name], (err)=>{
           if(err) reject(`${err}`);
-          resolve({success : true});
+          else resolve({success : true});
         });
       });
     }
